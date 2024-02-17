@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nonogram but make it javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="nonogram.js"></script>
 </head>
 <body>
 
-    <table>
+    <table class = "nonogramTable">
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td id = "NW" onclick="console.log('NW')">1</td>
+            <td id = "N" onclick="console.log('N')">2</td>
+            <td id = "NE" onclick="console.log('NE')">3</td>
         </tr>
         <tr>
-            <td>huh</td>
+            <td id = "W" onclick="console.log('W')">4</td>
+            <td id = "O" onclick="console.log('O')">5</td>
+            <td id = "E" onclick="console.log('E')">6</td>
+        </tr>
+        <tr>
+            <td id = "SW" onclick="console.log('SW')">7</td>
+            <td id = "S" onclick="console.log('S')">8</td>
+            <td id = "SE" onclick="console.log('SE')">9</td>
         </tr>
     </table>
 
-    <script src="nonogram.js"></script>
     <script>
         const nonogram = new Nonogram(10, 10);
         nonogram.generate();
