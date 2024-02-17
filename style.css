@@ -1,8 +1,14 @@
 body {
     margin: 20px;
-    size: 100vw 100vh;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+td {
+    height: fit-content;
+    aspect-ratio: 1/1;
+    border: 1px dotted black;
 }
